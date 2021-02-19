@@ -174,15 +174,63 @@ alias to: cloud.region
 None
 
 
-*`counter`*::
+*`path`*::
 +
 --
-PLEASE UPDATE DOCUMENTATION
+Path of the file/directory that is being monitored
+
+
+type: text
+
+required: True
+
+--
+
+*`last_updated`*::
++
+--
+A string that represents the last modified date of a file/directory
+
+
+type: text
+
+required: True
+
+--
+
+*`is_dir`*::
++
+--
+Describes whether the monitored path is a directory
+
+
+type: boolean
+
+required: True
+
+--
+
+*`size`*::
++
+--
+The size of the directory
 
 
 type: long
 
 required: True
+
+--
+
+*`error`*::
++
+--
+Describes the errors that were received during the run
+
+
+type: text
+
+required: False
 
 --
 

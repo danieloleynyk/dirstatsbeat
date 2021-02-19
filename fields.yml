@@ -6518,8 +6518,28 @@
   title: dirstatsbeat
   description:
   fields:
-    - name: counter
+    - name: path
+      type: text
+      required: true
+      description: >
+        Path of the file/directory that is being monitored
+    - name: last_updated
+      type: text
+      required: true
+      description: >
+        A string that represents the last modified date of a file/directory
+    - name: is_dir
+      type: boolean
+      required: true
+      description: >
+        Describes whether the monitored path is a directory
+    - name: size
       type: long
       required: true
       description: >
-        PLEASE UPDATE DOCUMENTATION
+        The size of the directory
+    - name: error
+      type: text
+      required: false
+      description: >
+        Describes the errors that were received during the run

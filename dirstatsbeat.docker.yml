@@ -1,5 +1,6 @@
 dirstatsbeat:
   period: 1s
+  path: /var/lib
 
 processors:
   - add_cloud_metadata: ~

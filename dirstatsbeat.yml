@@ -1,10 +1,12 @@
-################### {Beat} Configuration Example #########################
+################### DirStatsBeat Configuration Example #########################
 
-############################# {Beat} ######################################
+############################# DirStatsBeat ######################################
 
 dirstatsbeat:
   # Defines how often an event is sent to the output
-  period: 1s
+  period: 10s
+  # Defines the monitored path, can a file or a directory
+  path: /var/lib
 
 # ================================== General ===================================
 

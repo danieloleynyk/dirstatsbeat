@@ -1,5 +1,5 @@
-= {Beat} Docs
+= DirStatsBeat Docs
 
-Welcome to the {Beat} documentation.
+Welcome to the DirStatsBeat documentation.
 
 
